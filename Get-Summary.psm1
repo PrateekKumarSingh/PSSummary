@@ -65,6 +65,7 @@ Begin
     }
     elseif($FromClipBoard)
     {
+        Add-Type -Assembly PresentationCore
         $Content = [Windows.clipboard]::GetText()
     }
     else
